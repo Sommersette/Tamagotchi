@@ -32,4 +32,10 @@ class Tamagotchi
   define_method(:is_hungry) do
     @food <= 5
   end
+  define_method(:is_sleepy) do
+    @rest <= 4
+  end
+  define_method(:is_bored) do
+    @activity <= 6
+  end
 end
