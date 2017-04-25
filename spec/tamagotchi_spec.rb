@@ -24,7 +24,7 @@ describe(Tamagotchi) do
       expect(my_pet.is_alive?()).to(eq(false))
     end
   end
-  
+
   describe("#time_passes") do
     it("decreases the amount of food the Tamagotchi has left by 1") do
       my_pet = Tamagotchi.new("lil dragon", 10, 10, 10)

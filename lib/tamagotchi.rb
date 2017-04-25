@@ -11,13 +11,13 @@ class Tamagotchi
       @name
     end
     define_singleton_method(:food_level) do
-      @food = 10
+      @food
     end
     define_singleton_method(:rest_level) do
-      @rest = 10
+      @rest
     end
     define_singleton_method(:activity_level) do
-      @activity = 10
+      @activity
     end
   end
   define_method(:is_alive?) do
