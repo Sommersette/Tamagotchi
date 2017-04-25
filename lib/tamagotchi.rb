@@ -29,4 +29,7 @@ class Tamagotchi
   define_method(:time_passes) do
     @food -= 1
   end
+  define_method(:is_hungry) do
+    @food <= 5
+  end
 end

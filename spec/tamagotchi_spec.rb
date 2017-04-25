@@ -32,4 +32,11 @@ describe(Tamagotchi) do
       expect(my_pet.food_level()).to(eq(9))
     end
   end
+  describe("#is_hungry") do
+    it("is hungry if food level is 5 or less") do
+    my_pet = Tamagotchi.new("lil dragon", 5, 10, 10)
+    my_pet.is_hungry()
+    expect(my_pet.food_level()).to(eq(5))
+    end
+  end
 end
